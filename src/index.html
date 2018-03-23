@@ -2,14 +2,18 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <title>Ping Pong</title>
+    <title>Doctor Lookup</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
+    <h3>Doctor Lookup</h3>
+    <form id="lookup-form">
+      <p>Search by Name:</p>
+      <input id="first-name" placeholder="first name">
+      <input id="last-name" placeholder="last name">
+      <p>Search by specialty:</p>
+      <input id="specialty" placeholder="specialty">
       <button type="submit">Submit</button>
     </form>
-    <ul id="solution"></ul>
+    <ul id="doctors"></ul>
   </body>
 </html>
