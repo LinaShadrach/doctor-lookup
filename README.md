@@ -1,31 +1,36 @@
-## Webpack-Heroku Template
+# Doctor Lookup
 
-A template for running an Express.js server on Heroku with Webpack, along with ESLint, Babel, Karma, Jasmine & other amenities.
+#### Russell Hofvendahl
 
-## Installing
+## Description
+  An interface for the BetterDoctor clinician index, built to explore APIs and promises in es6.
 
-```
-git clone https://github.com/rhofvendahl/webpack-heroku-template
-cd webpack-heroku-template
+## Installation
 
-npm install
-```
-To start development server:
-```
-npm run start
-```
+  ```
+  git clone https://github.com/rhofvendahl/webpack-heroku-template
+  cd webpack-heroku-template
 
-To start express server (needed for heroku):
-```
-npm run express
-```
-and visit http://localhost:8080
+  npm install
 
-To run on Heroku:
-```
-#you will need to make a Heroku account if you have not already
-heroku login
-heroku create
-git push heroku master
-heroku open
-```
+  ```
+  To start development server:
+  ```
+  npm run start
+  ```
+
+  To start express server:
+  ```
+  npm run express
+  ```
+  and visit http://localhost:8080
+
+### License
+
+Copyright (c) 2018 Russell Hofvendahl
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
