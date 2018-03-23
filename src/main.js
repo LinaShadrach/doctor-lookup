@@ -38,10 +38,10 @@ $(document).ready(function() {
     if (firstName) url += "first_name=" + firstName + "&"
     if (lastName) url += "last_name=" + lastName + "&"
     if (specialty) url += "specialty_uid=" + specialty + "&"
-    url += "location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=a04c97b866b15e5f0e8a24fa4252742"//9
-    console.log(url);
+    url += "location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=";
+    url += process.env.exports.apiKey;
+
     $.get(url).then(function(response) {
-      console.log("fulfilled");
       if (response.data.length == 0) {
         $("#response").text("No matches found");
       } else {
@@ -49,7 +49,6 @@ $(document).ready(function() {
       }
     }).fail(function(error) {
       $("#response").text("Error: " + error.statusText)
-
     })
   });
 });
