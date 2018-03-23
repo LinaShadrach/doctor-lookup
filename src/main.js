@@ -21,7 +21,7 @@ $(document).ready(function() {
     if (lastName) url += "last_name=" + lastName + "&"
     if (specialty) url += "specialty_uid=" + specialty + "&"
     url += "location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=100&user_key=9a04c97b866b15e5f0e8a24fa4252742"
-
+    console.log(url);
     $.get(url).then(function(response) {
       $("#response").text("not error")
       console.log(response.main);

@@ -10,8 +10,26 @@
       <p>Search by Name:</p>
       <input id="first-name" placeholder="first name">
       <input id="last-name" placeholder="last name">
-      <p>Search by specialty:</p>
-      <input id="specialty" placeholder="specialty">
+      <p>Search by condition:</p>
+      <select class="form-control" id="specialty">
+        <option value = "">(none selected)</option>
+        <option value="sleep-medicine-doctor">Trouble sleeping</option>
+        <option value="dentist">Toothache</option>
+        <option value="dermatologist">Rash</option>
+        <option value="psychiatrist">Mood disorder</option>
+        <option value="physical therapist">Mobility issue</option>
+        <option value="rheumatologist">Joint pain</option>
+        <option value="nutritionist">Nutritional defecit</option>
+        <option value="oncologist">Cancer</option>
+        <option value="optometrist">Poor vision</option>
+        <option value="geneticist">Genetic disorder</option>
+        <option value="gastroenterologist">Irritable bowel syndrome</option>
+        <option value="cardiologist">Chest pain</option>
+        <option value="chiropractor">Back pain</option>
+        <option value="audiologist">Trouble hearing</option>
+      </select>
+      <br>
+      <br>
       <button type="submit">Submit</button>
     </form>
     <p id="response"></p>
