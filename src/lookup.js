@@ -26,7 +26,7 @@ export function lookup({firstName, lastName, specialty}) {
   if (firstName) url += "first_name=" + firstName + "&";
   if (lastName) url += "last_name=" + lastName + "&";
   if (specialty) url += "specialty_uid=" + specialty + "&";
-  url += "location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=";
+  url += "location=45.523%2C-122.676%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=";
   url += process.env.exports.apiKey;
 
   $.get(url).then(function(response) {
